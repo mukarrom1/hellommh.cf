@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="icon/m-icon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -39,7 +40,7 @@
 		<div class="wrap">
 			<nav>
 				<div class="width_mrgn menu">
-					<ul>
+					<ul id="header_nav">
 						<li><a href="index.html">Home</a></li>
 						<li><a href="#">Inside</a></li>
 						<li><a href="#">Menu 3 &raquo;</a>
@@ -238,6 +239,20 @@
 		</div>
 	</div>
 	<!-- Footer end -->
+
+	<!------------- Javascript
+		 ------------------>
+
+	<script src="js/responsive-menu.js"></script>
+		
+	<script>
+	  domready(function(){
+				selectnav('header_nav', {
+			label: ' Select Menu '
+		});
+		prettyPrint()
+			})
+	</script>
 
 </body>
 

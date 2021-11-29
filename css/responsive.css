@@ -2,6 +2,9 @@
 @media only screen and (min-width:960px) {
     .main_wrap{}
     .wrap{}
+    .selectnav{
+        display: none;
+    }
 }
 
 @media only screen and (min-width:768px) and (max-width:959px) {
@@ -10,6 +13,9 @@
     }
     .wrap{
         width: 100%;
+    }
+    .selectnav{
+        display: none;
     }
 }
 
@@ -20,6 +26,15 @@
     .wrap{
         width: 100%;
     }
+    #header_nav{
+        display: none;
+    }
+    .selectnav{
+        display: block;
+        width: 100%;
+        height: 37px;
+    }
+    
     /**************Social Share*******************/
     .social_share{
         width: 20px;
@@ -80,6 +95,7 @@
     #artcl_img_wrap p{
         width: 100%;
         float: left;
+        text-align: justify;
     }
     /* end the css of home page article css */
     .articles h3{
@@ -88,11 +104,14 @@
         text-align: center;
     }
     /* This is inside page article css */
+    #artcl_all p{
+        text-align: justify;
+    }
     figure img{
-        width: 400px;
+        width: 100%;
     }
     figure{
-        width: 400px;
+        width: 95%;
         padding: 10px;
         background-color: #ddd;
         margin: 0 auto;
@@ -108,12 +127,13 @@
     }
     blockquote{
         background-color: #ddd;
-        margin-left: 80px;
+        margin-left: 20px;
         margin-top: 10px;
         margin-bottom: 10px;
         padding: 10px 10px;
         padding-left: 20px;
-        border-left: 8px solid #6b710e;
+        border-left: 12px solid #0cd11c;
+        font-size: small;
     }
     /* end the css of inside page article */
     #articles p{
@@ -163,3 +183,6 @@
 
 
     }
+
+
+    

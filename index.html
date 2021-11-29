@@ -48,7 +48,7 @@
 		<div class="wrap">
 			<nav>
 				<div class="width_mrgn menu">
-					<ul>
+					<ul id="header_nav">
 						<li><a href="#">Home</a></li>
 						<li><a href="insid.html">Inside</a></li>
 						<li><a href="#">Menu 3 &raquo;</a>
@@ -226,6 +226,17 @@
 			$('#slider').nivoSlider();
 		});
 	</script>
+
+<script src="js/responsive-menu.js"></script>
+		
+<script>
+  domready(function(){
+			selectnav('header_nav', {
+		label: 'Select Menu'
+	});
+	prettyPrint()
+		})
+</script>
 	<!-- script end -->
 </body>
 
